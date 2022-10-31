@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667187348340' stop='1667187359397'>
+    <name>Create Appointment</name>
+    <title>Create Appointment</title>
+    <test-cases>
+        <test-case start='1667187348341' status='broken' stop='1667187359395'>
+            <name>Create Appointment successfully</name>
+            <title>Create Appointment successfully</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "//*[@id="cloudHeader-userName-grn"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//*[@id="cloudHeader-userName-grn"]" because element wasn't found
+                    at implicitWait (C:\WebdriverIO\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\WebdriverIO\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at LogOut.clickOnHeader (C:\WebdriverIO\src\page-objects\/Logout.js:8:9)
+                    at Context.&lt;anonymous> (C:\WebdriverIO\src\test-scripts\/Testcase_1.js:43:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

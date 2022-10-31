@@ -9,11 +9,15 @@ const ADD_ATTENDEES = '#btn_add_sUID';
 const ROOM = '[data-name="seminar room"]';
 const ADD_ROOM = '#btn_add_cITEM';
 const SUBMIT = '//*[@id="schedule_submit_button"]/a';
-const ERROR_CODE = '..error_code';
+const ERROR_CODE = '.error_code';
 const ERROR_MESS = '.error_diagnosis';
 const ERROR_OK = '//*[@id="msgbox_btn_ok"]/a';
+const DELETE_BUTTON = '//*[@id="main_menu_part"]/div[1]/span[2]/span/a';
+const ALL_SCHEDULES = '.attentionMessage-grn';
+const YES_BUTTON = '//*[@id="schedule_button_save"]/a';
 
-class CreateAppointment {
+
+class AppointmentDetails {
 
     async timeLine(start, end) {
         await $(START_HOUR).selectByVisibleText(start);
@@ -45,16 +49,28 @@ class CreateAppointment {
         await $(SUBMIT).waitForDisplayed(10000, true);
     }
 
+    async clickOnDeleteButton() {
+        await $(DELETE_BUTTON).click();
+    }
+
+    async deleteFrom() {
+        await $(ALL_SCHEDULES).click();
+    }
+
+    async submitDelete() {
+        await $(YES_BUTTON).click();
+        await $(YES_BUTTON).waitForDisplayed({ reverse: true });
+    }
+
     async error(errorCode, errorMess) {
-        expect(ERROR_CODE).toHaveText(errorCode);
-        expect(ERROR_MESS).toHaveText(errorMess);
+        await expect($(ERROR_CODE)).toHaveText(errorCode);
+        await expect($(ERROR_MESS)).toHaveText(errorMess);
     }
 
     async clickErrorButton() {
         await $(ERROR_OK).click();
     }
 
-
 }
 
-export default new CreateAppointment();
+export default new AppointmentDetails();

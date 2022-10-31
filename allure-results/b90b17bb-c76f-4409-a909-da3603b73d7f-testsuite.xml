@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667188076158' stop='1667188089753'>
+    <name>Create Appointment</name>
+    <title>Create Appointment</title>
+    <test-cases>
+        <test-case start='1667188076158' status='broken' stop='1667188089752'>
+            <name>"after all" hook for Create Appointment</name>
+            <title>"after all" hook for Create Appointment</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;button type="button" id="cloudHeader-userName-grn" class="cloudHeader-userName-grn button_style_off_grn" aria-controls="cloudHeader-userProfile-grn" aria-haspopup="true" aria-expanded="false">...&lt;/button> is not clickable at point (694, 24). Other element would receive the click: &lt;div id="overlay" class="overlay" style="z-index: 3001; width: 1004px; height: 2175px;">&lt;/div>
+                  (Session info: chrome=106.0.5249.119)</message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;button type="button" id="cloudHeader-userName-grn" class="cloudHeader-userName-grn button_style_off_grn" aria-controls="cloudHeader-userProfile-grn" aria-haspopup="true" aria-expanded="false">...&lt;/button> is not clickable at point (694, 24). Other element would receive the click: &lt;div id="overlay" class="overlay" style="z-index: 3001; width: 1004px; height: 2175px;">&lt;/div>
+                  (Session info: chrome=106.0.5249.119)
+                    at getErrorFromResponseBody (C:\WebdriverIO\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\WebdriverIO\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\WebdriverIO\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\WebdriverIO\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at LogOut.clickOnHeader (C:\WebdriverIO\src\page-objects\/Logout.js:8:9)
+                    at Context.&lt;anonymous> (C:\WebdriverIO\src\test-scripts\/Testcase_2.js:37:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

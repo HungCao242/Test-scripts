@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667188183943' stop='1667188192733'>
+    <name>Create Appointment</name>
+    <title>Create Appointment</title>
+    <test-cases>
+        <test-case start='1667188183943' status='broken' stop='1667188192732'>
+            <name>Create Appointment unsuccessfully</name>
+            <title>Create Appointment unsuccessfully</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>The selector "..error_code" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "..error_code" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at getErrorFromResponseBody (C:\WebdriverIO\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\WebdriverIO\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at Browser.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Browser.$ (C:\WebdriverIO\node_modules\webdriverio\build\commands\browser\$.js:91:17)
+                    at Browser.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at C:\WebdriverIO\node_modules\expect-webdriverio\lib\matchers\element\toHaveText.js:17:18
+                    at Browser.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at CreateAppointment.error (C:\WebdriverIO\src\page-objects\/AppointmentDetails.js:49:9)
+                    at Context.&lt;anonymous> (C:\WebdriverIO\src\test-scripts\/Testcase_2.js:32:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

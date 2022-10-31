@@ -1,7 +1,14 @@
+import Page from "./Page";
+
+const GARRON = '[title="Garoon"]';
 let SCHEDULER = "=Scheduler";
 const CREATE_APPOINTMENT = '=New';
 
-class CreateAppointment {
+class Scheduler extends Page {
+
+    async clickOnGaroon() {
+        await $(GARRON).click();
+    }
 
     async clickonScheduler() {
         await $(SCHEDULER).click();
@@ -12,4 +19,4 @@ class CreateAppointment {
     }
 }
 
-export default new CreateAppointment();
+export default new Scheduler();

@@ -15,21 +15,19 @@ describe('Create Appointment', () => {
         await Scheduler.clickOnGaroon();
     });
 
-    it('Create Appointment successfully', async () => {
+    it('Create Appointment unsuccessfully', async () => {
         await Scheduler.clickonScheduler();
         await Scheduler.newAppointment();
 
-        await Appointment.timeLine(8, 10);
+        await Appointment.timeLine(15, 14);
         await Appointment.timeZone();
         await Appointment.title('Daily Meeting');
         await Appointment.addAttendees();
         await Appointment.addRoom();
         await Appointment.submit();
 
-        await Appointment.clickOnDeleteButton();
-        await Appointment.deleteFrom();
-        await Appointment.submitDelete();
-
+        await Appointment.error('GRN_SCHD_13012', 'Date and time are invalid.');
+        await Appointment.clickErrorButton();
     });
 
     afterEach(async () => {

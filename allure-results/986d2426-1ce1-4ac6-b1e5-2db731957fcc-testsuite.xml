@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667186513219' stop='1667186536559'>
+    <name>Create Appointment</name>
+    <title>Create Appointment</title>
+    <test-cases>
+        <test-case start='1667186513219' status='broken' stop='1667186536558'>
+            <name>"after each" hook for Create Appointment</name>
+            <title>"after each" hook for Create Appointment</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element (".login-dialog-title") still not displayed after 10000ms</message>
+                <stack-trace>Error: element (".login-dialog-title") still not displayed after 10000ms
+                    at C:\WebdriverIO\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\WebdriverIO\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\WebdriverIO\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at LogOut (C:\WebdriverIO\src\page-objects\/Logout.js:13:9)
+                    at Context.&lt;anonymous> (C:\WebdriverIO\src\test-scripts\/Testcase_1.js:40:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

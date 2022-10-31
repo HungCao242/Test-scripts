@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667185873637' stop='1667185882445'>
+    <name>Create Appointment</name>
+    <title>Create Appointment</title>
+    <test-cases>
+        <test-case start='1667185873638' status='failed' stop='1667185882445'>
+            <name>Create Appointment successfully</name>
+            <title>Create Appointment successfully</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expect(...).selectByVisibleText is not a function</message>
+                <stack-trace>TypeError: expect(...).selectByVisibleText is not a function
+                    at CreateAppointment.timeLine (C:\WebdriverIO\src\page-objects\/AppointmentDetails.js:19:34)
+                    at Context.&lt;anonymous> (C:\WebdriverIO\src\test-scripts\/Testcase_1.js:26:27)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667187374575' stop='1667187389602'>
+    <name>Create Appointment</name>
+    <title>Create Appointment</title>
+    <test-cases>
+        <test-case start='1667187374576' status='broken' stop='1667187389600'>
+            <name>Create Appointment successfully</name>
+            <title>Create Appointment successfully</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("[href="javascript:logout()"]") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("[href="javascript:logout()"]") still not displayed after 10000ms
+                    at C:\WebdriverIO\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\WebdriverIO\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\WebdriverIO\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at LogOut (C:\WebdriverIO\src\page-objects\/Logout.js:13:9)
+                    at Context.&lt;anonymous> (C:\WebdriverIO\src\test-scripts\/Testcase_1.js:45:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

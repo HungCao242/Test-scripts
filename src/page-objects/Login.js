@@ -1,8 +1,14 @@
+import Page from "./Page";
+
 const USERNAME = '[name="username"]';
 const PASSWORD = '[name="password"]';
 const LOGIN_BTN = ".login-button";
 
-class LoginPage {
+class LoginPage extends Page {
+
+    async open() {
+        await super.openPage('/login');
+    }
 
     async waitForUserNameDisplayed() {
         await $(USERNAME).waitForDisplayed(15000);
